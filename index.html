@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cutsences</title>
+    
+    <link rel="icon" href="https://cdn.discordapp.com/attachments/1079564237317353572/1086115692002168922/krabby.PNG" type="image/x-icon">
+    <link rel="shortcut icon" href="https://cdn.discordapp.com/attachments/1079564237317353572/1086115692002168922/krabby.PNG" type="image/x-icon">
+
+    <style>
+      body {
+        background-color: black;
+        color: white;
+        font-family: 'Open Sans', sans-serif;
+        position: relative;
+      }
+      
+      h1 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, 50%);
+      }
+      
+      g {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-400%, 200%);
+      }
+
+      t {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, 80%);
+      }
+
+      s3s1 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, 800%);
+      }
+
+      Argentina {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, 4000%);
+      }
+
+    </style>
+  </head>
+
+
+  
+
+
+  <body>
+    <h1>here are the videos!1!11</h1>
+<g>^^^ Request Here for Videos ^^^</g>
+<t>press ctrl + f to search for videos (example: qatar)</t>
+
+<Argentina>FIFA World Cup Qatar 2022, Argentina Vs France</Argentina>
+
+<s3s1>South Park: Rainforest Schmainforest</s3s1>
+  </body>
+ 
+  <head>
+    <title>Send Message to Discord Webhook</title>
+    <style>
+      body {
+        background-color: #000000;
+        color: white;
+        font-family: Arial, sans-serif;
+      }
+      
+      #message {
+        width: 300px;
+        height: 30px;
+        font-size: 16px;
+        margin-right: 10px;
+        background-color: #444;
+        border: none;
+        padding: 5px;
+        color: white;
+      }
+      
+      #send {
+        font-size: 16px;
+        padding: 5px 10px;
+        background-color: #2ecc71;
+        border: none;
+        color: white;
+        cursor: pointer;
+      }
+      
+      #send:disabled {
+        background-color: #555;
+        cursor: default;
+      }
+    </style>
+  </head>
+  <body>
+    <input type="text" id="message" placeholder="Enter your Video request!1!1">
+    <button id="send" onclick="sendMessage()">Send</button>
+
+    <script>
+      let cooldown = false;
+
+      function sendMessage() {
+        // Replace YOUR_WEBHOOK_URL with your Discord webhook URL
+        const webhookUrl = "https://discord.com/api/webhooks/1085405926200197270/yGLJ9Orr6L_NmuOP9PDO_yHm4c8iarxtUwP_NdSMd29N2K9rEZlsChq5Qy4uoIt3Xxq-";
+        
+        // Get the message from the textbox
+        const message = document.getElementById("message").value;
+
+        // Check if the button is on cooldown
+        if (cooldown) {
+          return;
+        }
+
+        // Set the button on cooldown for 5 seconds
+        cooldown = true;
+        setTimeout(() => {
+          cooldown = false;
+        }, 5000);
+
+        // Create a new XMLHttpRequest object
+        const xhr = new XMLHttpRequest();
+        xhr.open("POST", webhookUrl);
+
+        // Set the content type to JSON
+        xhr.setRequestHeader("Content-Type", "application/json");
+
+        // Set up the JSON payload
+        const payload = {
+          content: message
+        };
+
+        // Send the payload as a JSON string
+        xhr.send(JSON.stringify(payload));
+      }
+    </script>
+  </body>
+
+  <style>
+    #my-video {
+      width: 560px;
+      height: 360px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, 50%);
+      border: 2px solid white;
+    }
+  </style>
+
+<style>
+  #rmy-video {
+    width: 560px;
+    height: 360px;
+    position: absolute;
+    top: 1500%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    border: 2px solid white;
+  }
+</style>
+
+</head>
+<body>
+  <video id="my-video" src="https://uc877dd22d0bcaf804f4324dcf8b.dl.dropboxusercontent.com/cd/0/inline/B4bloPZGJmMyig5zR8YHPLy-H6P_vmf-JlN7n1PLb_Ug800aV4beh0WBlOyLZG2KwTbP35cmcoxzivxqMZAswcCQbYQyyj01dKHDQ-YH00vjJenzfzUc2g_QnnQCnEK5asqtbXtqrV1Ms26_BF-Rw2G01qf-jIcA2saJuGYyeoInPw/file#" controls>
+    Your browser does not support the video tag.
+  </video>
+</body>
+
+<body>
+  <video id="rmy-video" src="https://ucac4a827e25ae9ffe40d0b0f352.dl.dropboxusercontent.com/cd/0/inline/B4bXlAr6JuCjjeQTvPVnjFO-AX5i05aQlcOyDA66i02zZGNDvCdCgvLqwl0px3XrThX6mDaFkQyn5SgzMVuoIYPtvjYZE6-djAcr4Y-all53j_huvkjgewtycLflzQarEXXtsrGXCK512B1Eut4y2jZjEqrqFYufL5DLluSaViFg1A/file#" controls>
+    Your browser does not support the video tag.
+  </video>
+</body>
+
+</html>
